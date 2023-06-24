@@ -1,0 +1,7 @@
+*__pycache__*
+weight/*
+dataset/*
+.vscode/*
+log/*
+out/*
+ckpt/*
