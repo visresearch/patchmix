@@ -23,7 +23,7 @@ from config.finetune.vit_tiny_finetune import vit_tiny_finetune
 from module.vits import ViT
 from utils import misc
 from utils.logger import Logger, console_logger
-from utils.misc import AverageMeter, copy_files
+from utils.misc import AverageMeter
 
 
 def build_dataset(is_train, args):
@@ -207,7 +207,6 @@ def main(rank, args):
             logger_tb = Logger(args.output_dir, name)
             logger_console = console_logger(logger_tb.log_dir, 'console_eval')
             dst_dir = os.path.join(logger_tb.log_dir, 'code/')
-            copy_files('./', dst_dir, args.exclude_file_list)
         else:
             logger_tb, logger_console = None, None
         if args.rank == 0:
