@@ -21,6 +21,7 @@ pip install -r requirements.txt
 
 ### 3. Datasets
 
+Please set the root paths of dataset in the `*.py' configuration file under the directory: `./config/'.
  `CIFAR10`, `CIFAR100` datasets provided by `torchvision`. The root paths of data are set to `/path/to/dataset` . The root path of  `ImageNet-1K (ILSVRC2012)` is `/path/to/ILSVRC2012`
 
 
