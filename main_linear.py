@@ -92,7 +92,7 @@ def train_one_epoch(model: torch.nn.Module, criterion,
                     train_loader: Iterable, optimizer: torch.optim.Optimizer,
                     epoch: int, loss_scaler, loggers, args, max_norm: float = 0,
                     ):
-    model.train()
+    model.eval()
     logger_tb, logger_console = loggers
 
     losses = AverageMeter('Loss', ':.4e')
