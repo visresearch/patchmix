@@ -10,7 +10,7 @@ PatchMix is a novel image mix strategy, which mixes multiple images in patch lev
 
 [[Paper](https://arxiv.org/abs/2306.12243)]    [[BibTex](#Citation)]    [[Blog(CN)](https://zhuanlan.zhihu.com/p/639240952)]
 
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvisresearch%2Fpatchmix&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false" style="text-align:center;vertical-align:middle"/>
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvisresearch%2Fpatchmix&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false" style="text-align:center;vertical-align:middle"/>
 
 ### 2. Requirements
 
