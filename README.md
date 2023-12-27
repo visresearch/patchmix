@@ -72,9 +72,9 @@ python python main_finetune.py --arch vit-small --pretrained-weights /path/to/pr
 
 ### 8. Main Results and Model Weights
 
-If you don't have an **mircosoft office account**, you can download the trained model weights by [this link](https://csueducn-my.sharepoint.com/:f:/g/personal/221258_csu_edu_cn/EsSud0DB_edBiODrZhDbNpsBwfTbpOkuJ_TKA6mTYSi6Dw).
+If you don't have a **mircosoft office account**, you can download the trained model weights by [this link](https://csueducn-my.sharepoint.com/:f:/g/personal/221258_csu_edu_cn/EsSud0DB_edBiODrZhDbNpsBwfTbpOkuJ_TKA6mTYSi6Dw).
 
-If you have an **mircosoft office account**, you can download the trained model weights by the links in the following tables.
+If you have a **mircosoft office account**, you can download the trained model weights by the links in the following tables.
 
 #### 8.1 ImageNet-1K
 
