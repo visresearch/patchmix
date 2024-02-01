@@ -8,11 +8,11 @@ This is the official implementation of paper: "Inter-Instance Similarity Modelin
 
 PatchMix is a novel image mix strategy, which mixes multiple images in patch level. The mixed image contains massive local components from multiple images and efficiently simulates rich similarities among natural images in an unsupervised manner. To model rich inter-instance similarities among images, the contrasts between mixed images and original ones, mixed images to mixed ones, and original images to original ones are conducted to optimize the ViT model. Experimental results demonstrate that our proposed method significantly outperforms the previous state-of-the-art on both ImageNet-1K and CIFAR datasets, e.g., 3.0% linear accuracy improvement on ImageNet-1K and 8.7% kNN accuracy improvement on CIFAR100.
 
-[[Paper](https://arxiv.org/abs/2306.12243)]    [[BibTex](#11. Citation)]    [[Blog(CN)](https://zhuanlan.zhihu.com/p/639240952)]
+[[Paper](https://arxiv.org/abs/2306.12243)]    [[BibTex](#Citation)]    [[Blog(CN)](https://zhuanlan.zhihu.com/p/639240952)]
 
 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvisresearch%2Fpatchmix&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false" style="text-align:center;vertical-align:middle"/>
 
-### 2. Requirements
+### Requirements
 
 ```bash
 conda create -n patchmix python=3.8
@@ -21,14 +21,14 @@ pip install -r requirements.txt
 
 
 
-### 3. Datasets
+### Datasets
 
 Please set the root paths of dataset in the `*.py` configuration file under the directory: `./config/`.
  `CIFAR10`, `CIFAR100` datasets provided by `torchvision`. The root paths of data are set to `/path/to/dataset` . The root path of  `ImageNet-1K (ILSVRC2012)` is `/path/to/ILSVRC2012`
 
 
 
-### 4. Self-Supervised Pretraining
+### Self-Supervised Pretraining
 
 #### ViT-Small with 2-node (8-GPU) training
 
@@ -40,7 +40,7 @@ python main_pretrain.py --arch vit-small
 
 
 
-### 5. kNN Evaluation
+### kNN Evaluation
 
 Set hyperparameters, dataset and GPU IDs in `./config/knn/knn.py` and run the following command
 
@@ -50,7 +50,7 @@ python main_knn.py --arch vit-small --pretrained-weights /path/to/pretrained-wei
 
 
 
-### 6. Linear Evaluation
+### Linear Evaluation
 
 Set hyperparameters, dataset and GPU IDs in `./config/linear/vit_small_linear.py` and run the following command:
 
@@ -60,7 +60,7 @@ python main_linear.py --arch vit-small --pretrained-weights /path/to/pretrained-
 
 
 
-### 7.  Fine-tuning Evaluation
+### Fine-tuning Evaluation
 
 Set hyperparameters, dataset and GPUs in `./config/finetuning/vit_small_finetuning.py` and run the following command
 
@@ -70,13 +70,13 @@ python python main_finetune.py --arch vit-small --pretrained-weights /path/to/pr
 
 
 
-### 8. Main Results and Model Weights
+### Main Results and Model Weights
 
 If you don't have a **mircosoft office account**, you can download the trained model weights by [this link](https://csueducn-my.sharepoint.com/:f:/g/personal/221258_csu_edu_cn/EsSud0DB_edBiODrZhDbNpsBwfTbpOkuJ_TKA6mTYSi6Dw).
 
 If you have a **mircosoft office account**, you can download the trained model weights by the links in the following tables.
 
-#### 8.1 ImageNet-1K
+#### ImageNet-1K
 
 |     Arch     | Batch size | #Pre-Epoch | Finetuning Accuracy | Linear Probing Accuracy | kNN Accuracy |
 |:------------:|:------:|:-----:|:------:|:--------:|:----------------------------------------------------------------------:|
@@ -85,7 +85,7 @@ If you have a **mircosoft office account**, you can download the trained model w
 
 
 
-#### 8.2 CIFAR10
+#### CIFAR10
 
 |  Arch   | Batch size | #Pre-Epoch |                     Finetuning Accuracy                      |                   Linear Probing Accuracy                    |                         kNN Accuracy                         |
 | :-----: | :--------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -95,7 +95,7 @@ If you have a **mircosoft office account**, you can download the trained model w
 
 
 
-#### 8.3 CIFAR100
+#### CIFAR100
 
 |  Arch   | Batch size | #Pre-Epoch |                     Finetuning Accuracy                      |                   Linear  Probing Accuracy                   |                         kNN Accuracy                         |
 | :-----: | :--------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -105,17 +105,17 @@ If you have a **mircosoft office account**, you can download the trained model w
 
 
 
-### 9. The Visualization of Inter-Instance Similarities
+### The Visualization of Inter-Instance Similarities
 
 ![visualization](./images/visualization.png)
 
 The query sample and the image with id 4 in key samples are from the same category. The images with id 3 and 5 come from category similar to query sample.
 
-### 10. License
+### License
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
 
-### 11. Citation
+### Citation
 
 ```bibtex
 @article{shen2023inter,
