@@ -115,14 +115,5 @@ The query sample and the image with id 4 in key samples are from the same catego
 
 This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
 
-### Citation
 
-```bibtex
-@article{shen2023inter,
-  author  = {Shen, Chengchao and Liu, Dawei and Tang, Hao and Qu, Zhe and Wang, Jianxin},
-  title   = {Inter-Instance Similarity Modeling for Contrastive Learning},
-  journal = {arXiv preprint arXiv:2306.12243},
-  year    = {2023},
-}
-```
 
