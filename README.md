@@ -118,11 +118,11 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 ### Citation
 
 ```bibtex
-@article{shen2025asymmetric,
-      title={Asymmetric Patch Sampling for Contrastive Learning}, 
-      author={Shen, Chengchao and Chen, Jianzhong and Wang, Shu and Kuang, Hulin and Liu, Jin and Wang, Jianxin},
-      journal={Pattern Recognition},
-      year={2025}
+@article{shen2023inter,
+  author  = {Shen, Chengchao and Liu, Dawei and Tang, Hao and Qu, Zhe and Wang, Jianxin},
+  title   = {Inter-Instance Similarity Modeling for Contrastive Learning},
+  journal = {arXiv preprint arXiv:2306.12243},
+  year    = {2023},
 }
 ```
 
