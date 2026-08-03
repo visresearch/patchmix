@@ -8,9 +8,7 @@ This is the official implementation of paper: "Inter-Instance Similarity Modelin
 
 PatchMix is a novel image mix strategy, which mixes multiple images in patch level. The mixed image contains massive local components from multiple images and efficiently simulates rich similarities among natural images in an unsupervised manner. To model rich inter-instance similarities among images, the contrasts between mixed images and original ones, mixed images to mixed ones, and original images to original ones are conducted to optimize the ViT model. Experimental results demonstrate that our proposed method significantly outperforms the previous state-of-the-art on both ImageNet-1K and CIFAR datasets, e.g., 3.0% linear accuracy improvement on ImageNet-1K and 8.7% kNN accuracy improvement on CIFAR100.
 
-[[Paper](https://arxiv.org/abs/2306.12243)]    [[BibTex](#Citation)]    [[Blog(CN)](https://zhuanlan.zhihu.com/p/639240952)]
-
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvisresearch%2Fpatchmix&count_bg=%23126DE4&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false" style="text-align:center;vertical-align:middle"/>
+[[Paper](https://www.sciencedirect.com/science/article/pii/S0031320326014731)]    [[Arxiv](https://arxiv.org/abs/2306.12243)]    [[BibTex](#Citation)]    [[Blog(CN)](https://zhuanlan.zhihu.com/p/639240952)]
 
 ### Requirements
 
@@ -114,11 +112,14 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 ### Citation
 
 ```bibtex
-@article{shen2023inter,
-  author  = {Shen, Chengchao and Liu, Dawei and Tang, Hao and Qu, Zhe and Wang, Jianxin},
-  title   = {Inter-Instance Similarity Modeling for Contrastive Learning},
-  journal = {arXiv preprint arXiv:2306.12243},
-  year    = {2023},
+@article{shen2026inter,
+    title={Inter-instance similarity modeling for contrastive learning},
+    author={Chengchao Shen and Dawei Liu and Hao Tang and Zhe Qu and Jianxin Wang},
+    journal = {Pattern Recognition},
+    volume = {180},
+    pages = {114509},
+    issn = {0031-3203},
+    year={2026}
 }
 ```
 
